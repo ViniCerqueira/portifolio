@@ -10,8 +10,16 @@ const Projects = () => {
       technologies: ["React", "TypeScript", "Tailwind"],
       github: "https://github.com/ViniCerqueira/catalogo-web.git",
       live: "https://catalogo-web-iota.vercel.app/",
-      image: "../public/image.png",
     },
+  ];
+
+  const folderProjects = [
+    {
+      title: "Weather App",
+      description: "App de clima com geolocalização e previsão de 7 dias.",
+      technologies: ["React", "OpenWeather API", "CSS Modules"],
+    }
+
   ];
 
   return (
@@ -31,26 +39,11 @@ const Projects = () => {
             {featuredProjects.map((project, index) => (
               <div
                 key={project.title}
-                className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                className={` gap-8 items-center "lg:flex-row-reverse" : ""
                   }`}
               >
-                {/* Project Image */}
-                <div
-                  className={`relative group ${index % 2 === 1 ? "lg:order-2" : ""
-                    }`}
-                >
-                  <div className="relative overflow-hidden rounded-xl border border-border">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                </div>
-
                 {/* Project Info */}
-                <div className={index % 2 === 1 ? "lg:order-1 lg:text-right" : ""}>
+                < div className={index % 2 === 1 ? "lg:order-1 lg:text-right" : ""}>
                   <p className="text-primary font-mono text-sm mb-2">Projeto em Destaque</p>
                   <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                   <div className="p-6 rounded-xl bg-card border border-border mb-4">
@@ -100,7 +93,7 @@ const Projects = () => {
           </div>
 
           {/* View More Button */}
-          <div className="text-center mt-12">
+          < div className="text-center mt-12" >
             <Button variant="outline" size="lg" asChild>
               <a
                 href="https://github.com/ViniCerqueira/catalogo-web.git"

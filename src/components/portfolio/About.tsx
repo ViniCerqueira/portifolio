@@ -36,7 +36,7 @@ const About = () => {
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
                 Sou um desenvolvedor front-end apaixonado por criar experiências
-                digitais memoráveis. Com mais de <span className="text-foreground font-medium">2 anos de experiência</span>,
+                digitais memoráveis. Com mais de <span className="text-foreground font-medium">1 anos de experiência</span>,
                 tenho trabalhado com startups produtos
                 que fazem a diferença para o cliente.
               </p>
