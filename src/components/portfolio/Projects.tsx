@@ -39,7 +39,7 @@ const Projects = () => {
             {featuredProjects.map((project, index) => (
               <div
                 key={project.title}
-                className={` gap-8 items-center "lg:flex-row-reverse" : ""
+                className={`gap-8 items-center "lg:flex-row-reverse" : ""
                   }`}
               >
                 {/* Project Info */}

@@ -6,6 +6,12 @@ const Hero = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleEmail = () => {
+    if (typeof window === "undefined") return;
+    const mailto = "mailto:ctt.cerqueira@gmail.com";
+    window.location.href = mailto;
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
@@ -68,7 +74,11 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="ctt.cerqueira@gmail.com"
+              href="mailto:ctt.cerqueira@gmail.com"
+              onClick={(e) => {
+                e.preventDefault();
+                handleEmail();
+              }}
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="Email"
             >

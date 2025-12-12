@@ -2,6 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
+  const handleWhatsApp = () => {
+    if (typeof window === "undefined") return;
+    const phone = "5511916781256"; // número em formato internacional sem '+'
+    const text = "Olá! Vi seu portfólio e gostaria de conversar sobre uma oportunidade.";
+    const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|webOS/i.test(
+      navigator.userAgent
+    );
+    const url = isMobile
+      ? `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
+        text
+      )}`
+      : `https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
+        text
+      )}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <section id="contact" className="py-24 bg-secondary/30 relative">
       <div className="container mx-auto px-6">
@@ -30,11 +46,9 @@ const Contact = () => {
           </div>
 
           {/* CTA Button */}
-          <Button variant="hero" size="xl" asChild>
-            <a href="mailto:ctt.cerqueira@gmail.com">
-              <Send className="w-5 h-5 mr-2" />
-              Enviar Mensagem
-            </a>
+          <Button variant="hero" size="xl" onClick={handleWhatsApp}>
+            <Send className="w-5 h-5 mr-2" />
+            Enviar Mensagem
           </Button>
 
           {/* Alternative */}
