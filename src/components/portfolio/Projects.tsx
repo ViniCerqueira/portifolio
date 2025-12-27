@@ -8,8 +8,8 @@ const Projects = () => {
       description:
         "O sistema centraliza informações para sanar dúvidas dos clientes, apresentar tratamentos fornecido pela empresa, esclarecer valores e otimiza o processo de agendamento através da integração com o WhatsApp.",
       technologies: ["React", "TypeScript", "Tailwind"],
-      github: "https://github.com/ViniCerqueira/catalogo-web.git",
-      live: "https://catalogo-web-iota.vercel.app/",
+      github: "https://github.com/ViniCerqueira/rose-gold-glow-page",
+      live: "https://www.donakbeauty.com/",
     },
   ];
 
