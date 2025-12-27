@@ -69,7 +69,7 @@ const Projects = () => {
                       }`}
                   >
                     <a
-                      href="https://github.com/ViniCerqueira/catalogo-web.git"
+                      href="https://github.com/ViniCerqueira/rose-gold-glow-page"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -78,7 +78,7 @@ const Projects = () => {
                       <Github className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://catalogo-web-iota.vercel.app/"
+                      href="https://www.donakbeauty.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -96,7 +96,7 @@ const Projects = () => {
           < div className="text-center mt-12" >
             <Button variant="outline" size="lg" asChild>
               <a
-                href="https://github.com/ViniCerqueira/catalogo-web.git"
+                href="https://github.com/ViniCerqueira/rose-gold-glow-page"
                 target="_blank"
                 rel="noopener noreferrer"
               >
