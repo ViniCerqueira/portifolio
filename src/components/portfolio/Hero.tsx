@@ -35,14 +35,12 @@ const Hero = () => {
 
           {/* Title */}
           <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-200">
-            Desenvolvedor <span className="text-foreground">Front-End</span>
+            Desenvolvedor <span className="text-foreground">Full Stack</span>
           </h2>
 
           {/* Description */}
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-up animation-delay-300">
-            Transformo designs em experiências digitais incríveis.
-            Especializado em React, JavaScript e interfaces modernas que
-            encantam usuários e impulsionam negócios.
+            Elevando o padrão de produtos digitais com React, Node.js e TypeScript. Desenvolvedor <strong className="text-gradient">Full Stack</strong> focado em criar interfaces modernas, sistemas escaláveis e experiências de usuário que impulsionam o crescimento de negócios.
           </p>
 
           {/* CTA Buttons */}
@@ -97,7 +95,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

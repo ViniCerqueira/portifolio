@@ -1,21 +1,26 @@
-import { Code2, Palette, Zap } from "lucide-react";
+import { Brain, Code2, Palette, Zap } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
       icon: Code2,
       title: "Código Limpo",
-      description: "Escrevo código legível, escalável e bem documentado seguindo as melhores práticas.",
+      description: "Desenvolvo arquiteturas ponta a ponta utilizando Node.js e TypeScript, garantindo sistemas escaláveis, manuteníveis e integrados com bancos de dados como PostgreSQL.",
     },
     {
       icon: Palette,
       title: "Design Focado",
-      description: "Transformo wireframes em interfaces pixel-perfect com atenção aos detalhes.",
+      description: "Transformo visões de design em interfaces modernas com React e Tailwind CSS, focando em storytelling e experiências imersivas que guiam o usuário de forma orgânica e intuitiva.",
     },
     {
       icon: Zap,
       title: "Performance",
-      description: "Otimizo cada linha para garantir aplicações rápidas e responsivas.",
+      description: "Otimizo aplicações para alta performance e SEO, garantindo carregamento rápido e fluidez, além de automatizar processos para reduzir o tempo de resposta e impulsionar conversões.",
+    },
+    {
+      icon: Brain,
+      title: "Pensamento Analítico",
+      description: "Aplico conceitos de Complexidade de Algoritmos e estruturas de dados para resolver problemas lógicos complexos, garantindo que cada funcionalidade seja tão eficiente quanto elegante.",
     },
   ];
 
@@ -35,22 +40,19 @@ const About = () => {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
-                Sou um desenvolvedor front-end apaixonado por criar experiências
-                digitais memoráveis. Com mais de <span className="text-foreground font-medium">1 anos de experiência</span>,
-                tenho trabalhado com startups produtos
-                que fazem a diferença para o cliente.
+                Sou um Desenvolvedor Full Stack apaixonado por transformar designs complexos em experiências digitais imersivas e funcionais. Com experiência prática em projetos que unem criatividade e estratégia, foco no desenvolvimento de produtos que realmente fazem a diferença para o usuário e para o negócio.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Minha jornada começou com curiosidade sobre como sites funcionam,
-                e hoje transformo essa curiosidade em soluções elegantes usando
-                <span className="text-primary"> React</span>,
-                <span className="text-primary"> JavaScript</span> e
-                <span className="text-primary"> Tailwind</span>.
+                Minha jornada começou com a curiosidade técnica que me levou a cursar <span className="text-foreground">Ciência da Computação</span>. Hoje, transformo essa base teórica em soluções elegantes utilizando o ecossistema
+                <span className="text-primary font-medium"> JavaScript</span>, com especialidade em <span className="text-primary font-medium">React</span>,
+                <span className="text-primary font-medium"> Node.js</span> e <span className="text-primary font-medium">TypeScript</span>. Tenho um interesse profundo por conceitos de computabilidade e complexidade de algoritmos, o que aplico em projetos autorais como o <span className="text-foreground">"Speed Run Complexidade Quiz"</span>, uma ferramenta voltada para o ensino de Big O notation.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">
+                Atualmente, dedico-me ao projeto <span className="text-foreground">"4m"</span>, onde desenvolvi um funil de marketing gamificado focado em storytelling e interação textual, priorizando uma experiência de usuário sem fricções iniciais. Além disso, possuo uma base sólida em suporte de TI e infraestrutura, fruto de mais de dois anos resolvendo problemas técnicos e otimizando fluxos de trabalho corporativos
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Quando não estou codando, você pode me encontrar explorando
-                novas tecnologias, contribuindo para projetos open-source ou
-                tomando um bom café enquanto desenho interfaces.
+                Quando não estou codando, você pode me encontrar explorando novos conceitos de linguagens formais, aprimorando interfaces modernas com <span className="text-primary font-medium">Tailwind CSS</span> ou resolvendo desafios de Sudoku para manter o raciocínio lógico afiado.
               </p>
             </div>
 

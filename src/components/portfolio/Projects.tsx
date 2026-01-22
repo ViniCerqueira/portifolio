@@ -1,25 +1,26 @@
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const featuredProjects = [
     {
-      title: "Catalogo Web",
+      title: "DonaK Beauty",
+      subtlitle: "Catalogo Web",
       description:
         "O sistema centraliza informações para sanar dúvidas dos clientes, apresentar tratamentos fornecido pela empresa, esclarecer valores e otimiza o processo de agendamento através da integração com o WhatsApp.",
-      technologies: ["React", "TypeScript", "Tailwind"],
-      github: "https://github.com/ViniCerqueira/rose-gold-glow-page",
+      technologies: ["React", "TypeScript", "Tailwind", "Node.js"],
+      github: "https://github.com/ViniCerqueira/DonaK-Beauty",
       live: "https://www.donakbeauty.com/",
     },
-  ];
-
-  const folderProjects = [
     {
-      title: "Weather App",
-      description: "App de clima com geolocalização e previsão de 7 dias.",
-      technologies: ["React", "OpenWeather API", "CSS Modules"],
-    }
-
+      title: "Method 4M",
+      subtlitle: "Funil Gamificado",
+      description:
+        "Interface web minimalista desenvolvida para um funil de marketing gamificado. O projeto utiliza o conceito de simulação de interface de smartphone para criar um ponto de contacto altamente imersivo. Desenvolvido com foco em interatividade e psicologia do utilizador, o projeto faz parte de um sistema de conversão de leads que privilegia o conteúdo narrativo e a simplicidade de uso.",
+      technologies: ["React", "TypeScript", "Tailwind", "Node.js"],
+      github: "https://github.com/ViniCerqueira/Method-4M",
+      live: "https://4m-nine.vercel.app/",
+    },
   ];
 
   return (
@@ -44,8 +45,8 @@ const Projects = () => {
               >
                 {/* Project Info */}
                 < div className={index % 2 === 1 ? "lg:order-1 lg:text-right" : ""}>
-                  <p className="text-primary font-mono text-sm mb-2">Projeto em Destaque</p>
-                  <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                  <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
+                  <h4 className="text-gradient mb-4">{project.subtlitle}</h4>
                   <div className="p-6 rounded-xl bg-card border border-border mb-4">
                     <p className="text-muted-foreground leading-relaxed">
                       {project.description}
@@ -69,7 +70,7 @@ const Projects = () => {
                       }`}
                   >
                     <a
-                      href="https://github.com/ViniCerqueira/rose-gold-glow-page"
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -78,7 +79,7 @@ const Projects = () => {
                       <Github className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://www.donakbeauty.com/"
+                      href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -96,7 +97,7 @@ const Projects = () => {
           < div className="text-center mt-12" >
             <Button variant="outline" size="lg" asChild>
               <a
-                href="https://github.com/ViniCerqueira/rose-gold-glow-page"
+                href="https://github.com/ViniCerqueira"
                 target="_blank"
                 rel="noopener noreferrer"
               >
