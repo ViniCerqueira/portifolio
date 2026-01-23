@@ -44,7 +44,7 @@ const Projects = () => {
                 className="flex flex-col lg:flex-row gap-12 items-center"
               >
                 {/* Bloco de Informações (Seu código original ajustado) */}
-                <div className="w-1/2">
+                <div className="w-full w-1/2">
                   <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
                   <h4 className="text-gradient mb-4">{project.subtlitle}</h4>
 
@@ -74,7 +74,7 @@ const Projects = () => {
                   </div>
                 </div>
                 {/* Bloco da Imagem */}
-                <div className="w-1/2">
+                <div className="w-full w-1/2">
                   <a href={project.live} target="_blank">
                     <div className="relative group overflow-hidden rounded-xl border border-border bg-muted">
                       <img
